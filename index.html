@@ -15,6 +15,20 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            function passvalues(){
+                var name=document.getElementById("name").value;
+                var email=document.getElementById("email").value;
+                var subject=document.getElementById("subject").value;
+                var message=document.getElementById("message").value;
+
+                localStorage.setItem("textvalue2", name);
+                localStorage.setItem("textvalue3", email);
+                localStorage.setItem("textvalue4", subject);
+                localStorage.setItem("textvalue5", message);
+                return false;
+            }
+        </script>
     </head>
     <body id="page-top">
 
@@ -32,7 +46,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="assets/img/Modul Lengkap Javascript.pdf">Ebook</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://formsubmit.co/el/jujixu">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -87,24 +101,6 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Aplikasi Perpus Sederhana.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Adventure.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -113,13 +109,31 @@
                             <img class="img-fluid" src="assets/img/portfolio/smartclass.jpeg" alt="..." />
                         </div>
                     </div>
-                    <!-- Portfolio Item 6-->
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Aplikasi Perpus Sederhana.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/jamdigital.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/odoo.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Adventure.png" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -160,19 +174,15 @@
                 </div>
             </div>
         </section>
-        <!-- Contact Section-->
+
         <section class="page-section" id="contact">
             <div class="container">
-                <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> -->
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <!-- * * * * * * * * * * * * * * *-->
@@ -182,60 +192,47 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
+                        <form id="contactForm" action="form.html" >
+                            <!-- Name input-->                            
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
-                            <!-- Email address input-->
+                            <!-- Email address input-->                  
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
-                            <!-- Phone number input-->
+                            <!-- subject input-->                  
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
+                                <input class="form-control" id="subject" type="text" placeholder="Perkenalan: [Nama Anda] - Exploring Synergies" data-sb-validations="required" />
+                                <label for="phone">Subject</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
-                            <!-- Message input-->
+                            <!-- Message input-->                  
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form Berhasil terkirim</div>
-                                    Silahkan klik link dibawah ini
-                                    <br />
-                                    <a href="https://formsubmit.co/el/jujixu">Form Kontak</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
+                            <input  style=" 
+                            background-color: #1abc9c;
+                            border: none;
+                            border-radius: 10px;
+                            padding: 20px 30px;
+                            font-size: 18px;
+                            color: white;
+                            cursor: pointer;"  type="submit" value="Submit" onclick="passvalues();">
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
                         </form>
-                        <!-- <button class="btn btn-primary btn-xl disabled"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://formsubmit.co/el/jujixu">Contact</a></button>
-                         -->
-
-                    </div>
+                     </div>
                 </div>
             </div>
         </section>
-
+    
 
         <!-- Footer-->
         <footer class="footer text-center">
@@ -451,8 +448,9 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title -->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> Digital Prayer Clock Using Arduino Based P10 Module</h2>
-                                     Icon Divider-->
+                                    <!-- <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Smart Class</h2> -->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> Develop ERF Manufactur using Odoo Framework</h2>
+                                    <!-- Icon Divider -->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-line"></div>
@@ -460,9 +458,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/jamdigital.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text -->
-                                    <p class="mb-4"  align="justify">The digital clock of prayer time is the use of microcontroller technology in the religious realm. where in this study using an Arduino microcontroller and arduino module p10 module. and produced an instrument in the form of a digital clock that shows wakru sholt that is properly connected</p> -->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/odoo.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4"  align="justify">
+                                        <!-- The purpose of this study is to design an IoT-based instrument, called the smartclass app. this device is functioned to be able to control the air conditioner, lights and monitors in the classroom, this research is backgrounded by a habit that occurs during classroom learning where sometimes students or lecturers forget to turn off devices in class -->
+                                        The Perkasa Barokah Group is a website that uses the Odoo Framework as a backend. Operating in Indonesia, the Company excels in the industries of fuel, ship construction, offshore assistance, transportation, fuel supply and storage. With divisions such as Barokah shipyard, fuel, tank storage, shore base, gas, supply chain and Argo, it forms a diversified conglomerate.
+                                    </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -473,7 +474,8 @@
                     </div>
                 </div>
             </div>
-        </div> --> -->
+        </div> 
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
