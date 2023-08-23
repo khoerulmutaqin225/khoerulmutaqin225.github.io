@@ -21,12 +21,19 @@
                 var email=document.getElementById("email").value;
                 var subject=document.getElementById("subject").value;
                 var message=document.getElementById("message").value;
-
+    
                 localStorage.setItem("textvalue2", name);
                 localStorage.setItem("textvalue3", email);
                 localStorage.setItem("textvalue4", subject);
                 localStorage.setItem("textvalue5", message);
-                return false;
+
+                console.log(name);
+                console.log(email);
+                console.log(subject);
+                console.log(message);
+                
+                var url = "https://formsubmit.co/el/jujixu"?name=" +name+"&email="+email+ "&subject=" + subject + "&message=" + message;
+                window.location.href = url;
             }
         </script>
     </head>
@@ -46,7 +53,8 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="assets/img/Modul Lengkap Javascript.pdf">Ebook</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://formsubmit.co/el/jujixu">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://api.whatsapp.com/send/?phone=6283127048901&text=Halo%20Khoerul%20Mutaqin,Saya%20Ingin%20bekerja%20sama%20dengan%20anda&type=phone_number&app_absent=0">Whatsapp</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +73,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0"> Software Engineer | Web Development | Mikro Controller</p>
+                <p class="masthead-subheading font-weight-light mb-0"> Python Developer | Software Engineer | Web Development </p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -175,7 +183,7 @@
             </div>
         </section>
 
-        <section class="page-section" id="contact">
+        <!-- <section class="page-section" id="contact">
             <div class="container">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
                 <div class="divider-custom">
@@ -185,35 +193,23 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
                         <form id="contactForm" action="https://formsubmit.co/el/jujixu">
-                            <!-- <form id="contactForm" action="form.html" > -->
-                            <!-- Name input-->                            
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
-                            <!-- Email address input-->                  
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
-                            <!-- subject input-->                  
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="subject" type="text" placeholder="Perkenalan: [Nama Anda] - Exploring Synergies" data-sb-validations="required" />
                                 <label for="phone">Subject</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
-                            <!-- Message input-->                  
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
@@ -232,7 +228,7 @@
                      </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     
 
         <!-- Footer-->
@@ -486,16 +482,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-            function constructURL() {
-                var name = encodeURIComponent(document.getElementById("name").value);
-                var email = encodeURIComponent(document.getElementById("email").value);
-                var subject = encodeURIComponent(document.getElementById("subject").value);
-                var message = encodeURIComponent(document.getElementById("message").value);
-        
-                var url = "https://formsubmit.co/el/jujixu?name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message;
-                window.location.href = url;
-            }
-        </script>
+
     </body>
 </html>
