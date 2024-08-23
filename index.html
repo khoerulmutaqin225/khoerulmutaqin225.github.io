@@ -34,7 +34,12 @@
             console.log(subject);
             console.log(message);
 
-            var url = "https://formsubmit.co/el/jujixu" ? name = " +name+" & email="+email+ " & subject=" + subject + " & message=" + message;
+            var baseUrl = "https://formsubmit.co/el/jujixu";
+            var queryString = "name=" + encodeURIComponent(name) +
+                "&email=" + encodeURIComponent(email) +
+                "&subject=" + encodeURIComponent(subject) +
+                "&message=" + encodeURIComponent(message);
+            var url = baseUrl + "?" + queryString;
             window.location.href = url;
         }
     </script>
@@ -205,7 +210,7 @@
                         <img class="img-fluid" src="assets/img/portfolio/purchase_product_optional.png" alt="..." />
                     </div>
                 </div>
-        </div>
+            </div>
 
     </section>
 
@@ -228,23 +233,26 @@
                 <div class="col-lg-4 ms-auto">
                     <p class="lead">
                     <p align="justify">
-                        Highly skilled Odoo Developer in developing and delivering robust software solutions. 
-                        Proficient in utilizing the Odoo framework, Python, and the Odoo development environment to create efficient and scalable applications. 
-                        Strong knowledge of object-oriented programming (OOP) principles, with expertise in front-end technologies such as HTML, CSS, JavaScript, and jQuery.
-                        
+                        Highly skilled Odoo Developer in developing and delivering robust software solutions.
+                        Proficient in utilizing the Odoo framework, Python, and the Odoo development environment to
+                        create efficient and scalable applications.
+                        Strong knowledge of object-oriented programming (OOP) principles, with expertise in front-end
+                        technologies such as HTML, CSS, JavaScript, and jQuery.
+
                     </p>
                 </div>
                 <div class="col-lg-4 me-auto">
                     <p class="lead">
-                    <p align="justify"> <p>
-                        Excellent problem-solving and debugging skills, with a keen eye for detail. 
+                    <p align="justify">
+                    <p>
+                        Excellent problem-solving and debugging skills, with a keen eye for detail.
                         Committed to staying updated with the latest industry trends and emerging technologies.
-                        </p>
+                    </p>
                 </div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="assets/img/KHOERUL MUTAQIN-kalimantan.pdf">
+                <a class="btn btn-xl btn-outline-light" href="assets/img/KHOERUL MUTAQIN 2024.pdf">
                     <i class="fas fa-download me-2"></i>
                     Download Resume!
                 </a>
@@ -359,7 +367,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Fire and Motion Detector With Whatsapp</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Fire and Motion
+                                    Detector With Whatsapp</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -368,9 +377,19 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/fire_detector.png" alt="..." />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/fire_detector.png"
+                                    alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4" ; align="justify"> The purpose of this study is to design an Arduino-based fire and motion detector that can be accessed via a smartphone application, using Telegram and WhatsApp for communication. This study follows the R&D method which includes hardware and software design, as well as tool testing. This tool integrates sensors to detect fire and motion and an IP Camera for visual monitoring. Users simply connect the device to the Telegram and WhatsApp applications, then enter the username and password provided. This tool automatically sends notifications and images if fire or motion is detected, allowing real-time monitoring. The results show that the tool functions well, detects fire and motion accurately and sends information effectively via messaging applications.</p>
+                                <p class="mb-4" ; align="justify"> The purpose of this study is to design an
+                                    Arduino-based fire and motion detector that can be accessed via a smartphone
+                                    application, using Telegram and WhatsApp for communication. This study follows the
+                                    R&D method which includes hardware and software design, as well as tool testing.
+                                    This tool integrates sensors to detect fire and motion and an IP Camera for visual
+                                    monitoring. Users simply connect the device to the Telegram and WhatsApp
+                                    applications, then enter the username and password provided. This tool automatically
+                                    sends notifications and images if fire or motion is detected, allowing real-time
+                                    monitoring. The results show that the tool functions well, detects fire and motion
+                                    accurately and sends information effectively via messaging applications.</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
                                     Close Window
@@ -405,7 +424,8 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/temperature_detector.jpg" alt="..." />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/temperature_detector.jpg"
+                                    alt="..." />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4" ; align="justify">The purpose of this research is to design an
                                     instrument for physics practicum, namely air cooling that can be accessed by the
@@ -455,8 +475,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/library.png" alt="..." />
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/library.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4" ; align="justify"> My Library is a simple application that utilizes php
                                     and mysql. This application has implemented the CRUD principle (Create, Read,
@@ -612,27 +631,31 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!== Portfolio Modal - Title==>
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Optional
-                                    FIelds Save</h2>
-                                <!== Icon Divider==>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!== Portfolio Modal - Image==>
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/optional_active_field.png" alt="..." />
-                                <!== Portfolio Modal - Text==>
-                                <p class="mb-4" ; align="justify"> This Odoo module enhances the functionality of the
-                                    list of options by allowing the saving of selected options
-                                    to the database. This ensures that the user can access and restore the same list of
-                                    options when opening
-                                    the application in a new browser or after reloading the page, providing a consistent
-                                    and efficient user experience.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Optional
+                                        FIelds Save</h2>
+                                    <!== Icon Divider==>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!== Portfolio Modal - Image==>
+                                            <img class="img-fluid rounded mb-5"
+                                                src="assets/img/portfolio/optional_active_field.png" alt="..." />
+                                            <!== Portfolio Modal - Text==>
+                                                <p class="mb-4" ; align="justify"> This Odoo module enhances the
+                                                    functionality of the
+                                                    list of options by allowing the saving of selected options
+                                                    to the database. This ensures that the user can access and restore
+                                                    the same list of
+                                                    options when opening
+                                                    the application in a new browser or after reloading the page,
+                                                    providing a consistent
+                                                    and efficient user experience.</p>
+                                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                    <i class="fas fa-xmark fa-fw"></i>
+                                                    Close Window
+                                                </button>
                             </div>
                         </div>
                     </div>
@@ -654,23 +677,33 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!== Portfolio Modal - Title==>
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Appointment Jitsi</h2>
-                                <!== Icon Divider==>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!== Portfolio Modal - Image==>
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/optional_active_field.png" alt="..." />
-                                <!== Portfolio Modal - Text==>
-                                <p class="mb-4" ; align="justify">
-                                    <p>The Jitsi Appointment module brings seamless integration with the Jitsi API, allowing users to schedule, manage, and start meetings directly from within the app. With this capability, users can easily set the meeting time and date, and receive a Jitsi link to join the meeting with just one click. The module also stores meeting details and manages meeting history, while providing automated notifications and reminders to ensure that nothing gets missed. This integration ensures a connected and efficient meeting experience, without the need to switch to another platform.
-                                    </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Appointment
+                                        Jitsi</h2>
+                                    <!== Icon Divider==>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!== Portfolio Modal - Image==>
+                                            <img class="img-fluid rounded mb-5"
+                                                src="assets/img/portfolio/optional_active_field.png" alt="..." />
+                                            <!== Portfolio Modal - Text==>
+                                                <p class="mb-4" ; align="justify">
+                                                <p>The Jitsi Appointment module brings seamless integration with the
+                                                    Jitsi API, allowing users to schedule, manage, and start meetings
+                                                    directly from within the app. With this capability, users can easily
+                                                    set the meeting time and date, and receive a Jitsi link to join the
+                                                    meeting with just one click. The module also stores meeting details
+                                                    and manages meeting history, while providing automated notifications
+                                                    and reminders to ensure that nothing gets missed. This integration
+                                                    ensures a connected and efficient meeting experience, without the
+                                                    need to switch to another platform.
+                                                </p>
+                                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                    <i class="fas fa-xmark fa-fw"></i>
+                                                    Close Window
+                                                </button>
                             </div>
                         </div>
                     </div>
@@ -692,24 +725,30 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!== Portfolio Modal - Title==>
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Purchase Product Optional</h2>
-                                <!== Icon Divider==>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!== Portfolio Modal - Image==>
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/optional_active_field.png" alt="..." />
-                                <!== Portfolio Modal - Text==>
-                                <p class="mb-4" ; align="justify">This custom Odoo module provide the product configurator in purchase.
-                                    Displays the Product Configurator if the chosen product in purchase order line has optional product.
-                                    The display price is based on matches vendor we choose in purchase order and the supplier info of each product. If don't match, then it will default by standard price
-                                    </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Purchase
+                                        Product Optional</h2>
+                                    <!== Icon Divider==>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!== Portfolio Modal - Image==>
+                                            <img class="img-fluid rounded mb-5"
+                                                src="assets/img/portfolio/optional_active_field.png" alt="..." />
+                                            <!== Portfolio Modal - Text==>
+                                                <p class="mb-4" ; align="justify">This custom Odoo module provide the
+                                                    product configurator in purchase.
+                                                    Displays the Product Configurator if the chosen product in purchase
+                                                    order line has optional product.
+                                                    The display price is based on matches vendor we choose in purchase
+                                                    order and the supplier info of each product. If don't match, then it
+                                                    will default by standard price
+                                                </p>
+                                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                    <i class="fas fa-xmark fa-fw"></i>
+                                                    Close Window
+                                                </button>
                             </div>
                         </div>
                     </div>
